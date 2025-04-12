@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOYOTA</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .button {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <button class="button">
+            <a href="index.html">VOLVER</a>
+        </button>
+        <h1 class="title">LINEAS DE VEHÍCULOS</h1>
+    </header>
+
+    <main>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 20px; background-color: rgba(0, 0, 0, 0.8); border-radius: 10px;">
+            <div style="text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <a href="Pickup.html" style="text-decoration: none; color: white;">
+                    <img src="imagenes/pickup.png" alt="Pickup" style="width: 140px; border-radius: 10px; margin-bottom: 10px; border: 2px solid white; transition: transform 0.3s ease;">
+                    <h2 style="margin-top: 10px; font-size: 1.2rem; color: #FFD700;">PICKUP</h2>
+                </a>
+            </div>
+            <div style="text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <a href="Sedan.html" style="text-decoration: none; color: white;">
+                    <img src="imagenes/COROLLA LE BLANCO.png" alt="Sedan" style="width: 140px; border-radius: 10px; margin-bottom: 10px; border: 2px solid white; transition: transform 0.3s ease;">
+                    <h2 style="margin-top: 10px; font-size: 1.2rem; color: #FFD700;">SEDAN</h2>
+                </a>
+            </div>
+            <div style="text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <a href="Camioneta.html" style="text-decoration: none; color: white;">
+                    <img src="imagenes/camioneta.png" alt="Camioneta" style="width: 140px; border-radius: 10px; margin-bottom: 10px; border: 2px solid white; transition: transform 0.3s ease;">
+                    <h2 style="margin-top: 10px; font-size: 1.2rem; color: #FFD700;">CAMIONETA</h2>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPUESTOS TOYOTA</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        h1, select {
+            color: white;
+        }
+
+        .button {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .button:hover {
+            background-color: #d32f2f;
+        }
+
+        select {
+            margin: 20px auto;
+            padding: 10px;
+            width: 50%;
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            font-size: 1rem;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #FFD700;
+        }
+
+        table {
+            width: 98%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th {
+            color: white;
+            background-color: red;
+            padding: 10px;
+        }
+
+        td {
+            color: aqua;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="button">
+            <a href="index.html">VOLVER</a>
+        </button>
+        <h1>REPUESTOS TOYOTA</h1>
+    </header>
+
+    <div>
+        <label for="repuestos">Selecciona un modelo de repuesto:</label>
+        <select id="repuestos" onchange="mostrarRepuesto()">
+            <option value="pickup">Pickup SRS</option>
+            <option value="landcruiser">Land Cruiser</option>
+            <option value="fortuner">Fortuner</option>
+            <option value="corolla">Corolla</option>
+            <option value="sedan">Sedan</option>
+        </select>
+    </div>
+
+    <main>
+        <table>
+            <tr>
+                <th>DESCRIPCIÓN</th>
+                <th>NÚMERO DE PARTE</th>
+                <th>NÚMERO DE SERIE</th>
+                <th>UBICACIÓN</th>
+            </tr>
+            <tr>
+                <td id="descripcion">PICKUP SRS</td>
+                <td id="num-parte">SF22121</td>
+                <td id="num-serie">546320L</td>
+                <td id="ubicacion">GUATEMALA</td>
+            </tr>
+        </table>
+    </main>
+
+    <script>
+        function mostrarRepuesto() {
+            const repuesto = document.getElementById("repuestos").value;
+
+            const descripcion = document.getElementById("descripcion");
+            const numParte = document.getElementById("num-parte");
+            const numSerie = document.getElementById("num-serie");
+            const ubicacion = document.getElementById("ubicacion");
+
+            if (repuesto === "pickup") {
+                descripcion.textContent = "PICKUP SRS";
+                numParte.textContent = "SF22121";
+                numSerie.textContent = "546320L";
+                ubicacion.textContent = "GUATEMALA";
+            } else if (repuesto === "landcruiser") {
+                descripcion.textContent = "LAND CRUISER";
+                numParte.textContent = "LC12345";
+                numSerie.textContent = "LC56789";
+                ubicacion.textContent = "GUATEMALA";
+            } else if (repuesto === "fortuner") {
+                descripcion.textContent = "FORTUNER";
+                numParte.textContent = "FT54321";
+                numSerie.textContent = "FT98765";
+                ubicacion.textContent = "GUATEMALA";
+            } else if (repuesto === "corolla") {
+                descripcion.textContent = "COROLLA";
+                numParte.textContent = "CR45678";
+                numSerie.textContent = "CR12345";
+                ubicacion.textContent = "GUATEMALA";
+            } else if (repuesto === "sedan") {
+                descripcion.textContent = "SEDAN";
+                numParte.textContent = "SD65432";
+                numSerie.textContent = "SD87654";
+                ubicacion.textContent = "GUATEMALA";
+            }
+        }
+    </script>
+</body>
+</html>

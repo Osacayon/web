@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINEA PICK UP</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        .button {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .button:hover {
+            background-color: #d32f2f;
+        }
+
+        .comprar {
+            background-color: #FFD700;
+            color: black;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .comprar a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .comprar:hover {
+            background-color: #FFC107;
+        }
+
+        .vehicle img {
+            width: 200px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <button class="button">
+            <a href="toyota.html" class="volver">VOLVER</a>
+        </button>
+        <h1 class="title">PICK UP</h1>
+    </header>
+
+    <main>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 20px; background-color: rgba(0, 0, 0, 0.8); border-radius: 10px;">
+            <div class="vehicle" style="text-align: center;">
+                <img src="imagenes/pickupsencillo.jpg" alt="Pickup Sencilla Manual">
+                <h2 style="margin: 10px 0; font-size: 1.2rem; color: #FFD700;">PICKUP SENCILLA</h2>
+                <p style="color: white;">Transmisión: Manual</p>
+                <p style="color: white;">Precio: Q250,000</p>
+                <button class="comprar">
+                    <a href="formulario.html">Comprar</a>
+                </button>
+            </div>
+            <div class="vehicle" style="text-align: center;">
+                <img src="imagenes/pickup.png" alt="Pickup Doble Automático">
+                <h2 style="margin: 10px 0; font-size: 1.2rem; color: #FFD700;">PICKUP DOBLE</h2>
+                <p style="color: white;">Transmisión: Automático</p>
+                <p style="color: white;">Precio: Q280,000</p>
+                <button class="comprar">
+                    <a href="formulario.html">Comprar</a>
+                </button>
+            </div>
+            <div class="vehicle" style="text-align: center;">
+                <img src="imagenes/hilux-gr-colores-blanco.jpg" alt="Pickup Hilux Verde">
+                <h2 style="margin: 10px 0; font-size: 1.2rem; color: #FFD700;">HILUX GR</h2>
+                <p style="color: white;">Transmisión: Automático</p>
+                <p style="color: white;">Precio: Q300,000</p>
+                <button class="comprar">
+                    <a href="formulario.html">Comprar</a>
+                </button>
+            </div>
+            <div class="vehicle" style="text-align: center;">
+                <img src="imagenes/trdpro.jpg" alt="Pickup Hilux Verde">
+                <h2 style="margin: 10px 0; font-size: 1.2rem; color: #FFD700;">HILUX GR</h2>
+                <p style="color: white;">Transmisión: Automático</p>
+                <p style="color: white;">Precio: Q300,000</p>
+                <button class="comprar">
+                    <a href="formulario.html">Comprar</a>
+                </button>
+            </div>
+            <div class="vehicle" style="text-align: center;">
+                <img src="imagenes/land cruiser pick.png" alt="Pickup Hilux Verde">
+                <h2 style="margin: 10px 0; font-size: 1.2rem; color: #FFD700;">HILUX GR</h2>
+                <p style="color: white;">Transmisión: Automático</p>
+                <p style="color: white;">Precio: Q300,000</p>
+                <button class="comprar">
+                    <a href="formulario.html">Comprar</a>
+                </button>
+            </div>
+            <div class="vehicle" style="text-align: center;">
+                <img src="imagenes/tundra.jpeg" alt="Pickup Tundra Naranja">
+                <h2 style="margin: 10px 0; font-size: 1.2rem; color: #FFD700;">TUNDRA NEGRA</h2>
+                <p style="color: white;">Transmisión: Manual</p>
+                <p style="color: white;">Precio: Q450,000</p>
+                <button class="comprar">
+                    <a href="formulario.html">Comprar</a>
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
